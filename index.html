@@ -193,7 +193,7 @@
             </div>
         </div>
     </div>
-    <section class="contacts-section container text-center">
+    <section id="contacts_section" class="container text-center">
         <div class="row d-flex justify-content-between">
             <div class="col-lg-6">
                     <img class="rounded-circle" src="img/contacts/main-org.JPG"
@@ -325,25 +325,29 @@
         $(window).ready(function() {
             var distance_to_partners = $('#partners_section').offset().top;
             var distance_to_best = $('#best_section').offset().top;
+            var distance_to_contacts = $('#conotacts_section').offset().top;
             var distance_to_category = $('#category_section').offset().top;
             var distance_to_ebec = $('#ebec_section').offset().top;
 
             $(window).scroll(function() {
-                if ($(window).scrollTop() + 56 >= distance_to_partners) {                
+                if ($(window).scrollTop() + 56 >= distance_to_partners) {
                     $('.to_partners').css('color', '#EEA225');
                     $('.to_ebec').css('color', '#FFF');
+                    $('.to_contacts').css('color', '#FFF');
                     $('.to_category').css('color', '#FFF');
                     $('.to_best').css('color', '#FFF');
 
                 } else if ($(window).scrollTop() + 56 >= distance_to_best) {
                     $('.to_best').css('color', '#EEA225');
                     $('.to_ebec').css('color', '#FFF');
+                    $('.to_contacts').css('color', '#FFF');
                     $('.to_category').css('color', '#FFF');
                     $('.to_partners').css('color', '#FFF');
 
                 } else if ($(window).scrollTop() + 56 >= distance_to_category) {
                     $('.to_category').css('color', '#EEA225');
                     $('.to_ebec').css('color', '#FFF');
+                    $('.to_contacts').css('color', '#FFF');
                     $('.to_best').css('color', '#FFF');
                     $('.to_partners').css('color', '#FFF');
 
@@ -353,8 +357,17 @@
                     $('.to_best').css('color', '#FFF');
                     $('.to_partners').css('color', '#FFF');
 
-                } else {
+                } 
+                else if ($(window).scrollTop() + 56 >= distance_to_contacts) {
+                    $('.to_ebec').css('color', '#EEA225');
+                    $('.to_category').css('color', '#FFF');
+                    $('.to_best').css('color', '#FFF');
+                    $('.to_partners').css('color', '#FFF');
+
+                } 
+                else {
                     $('.to_ebec').css('color', '#FFF');
+                    $('.to_contacts').css('color', '#FFF');
                     $('.to_category').css('color', '#FFF');
                     $('.to_best').css('color', '#FFF');
                     $('.to_partners').css('color', '#FFF');
