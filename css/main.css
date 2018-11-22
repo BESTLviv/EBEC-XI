@@ -198,30 +198,16 @@ canvas {
 	height: 80vh;
 }
 
-.contact-div {
-	height: 360px;
+#contacts_section {
+	padding: 100px 0;
 }
 
-.contact-div .white {
-	widows: 100%;
-	height: 100%;
+.contact-info {
+	padding-top: 50px;
 }
 
-.contact-div .photo {
-	margin-top: 60px;
-	height: 240px;
-	width: 240px;
-	box-shadow: 1px 3px 12px rgba(0,0,0,0.3);
-	transform: rotate(45deg);
-	overflow: hidden;
-}
-
-.photo div {
-	margin-top: -60px;
-	margin-left: -60px;
-	height: 360px;
-	width: 360px;
-	transform: rotate(-45deg);
+.img-fluid {
+	cursor: pointer;
 }
 
 .to_main {
